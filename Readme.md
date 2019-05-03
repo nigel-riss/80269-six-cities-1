@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
 * Студент: [Юрий Куренков](https://up.htmlacademy.ru/react/1/user/80269).
-* Наставник: [Юрий Куренков](https://htmlacademy.ru/profile/id505933).
+* Наставник: [Евгений Фаллер](https://htmlacademy.ru/profile/id505933).
 
 ---
 
