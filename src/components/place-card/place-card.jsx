@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const PlaceCard = (props) => {
-  const {title} = props;
+  const {
+    title
+  } = props;
 
   return <article className="cities__place-card place-card">
     <div className="place-card__mark">
