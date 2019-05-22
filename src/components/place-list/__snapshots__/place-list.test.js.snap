@@ -6,6 +6,8 @@ exports[`PlaceList correctly renders 1`] = `
 >
   <article
     className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
   >
     <div
       className="place-card__mark
@@ -21,6 +23,7 @@ exports[`PlaceList correctly renders 1`] = `
     >
       <a
         href="#"
+        onClick={[Function]}
       >
         <img
           alt="Place image"
@@ -113,6 +116,8 @@ exports[`PlaceList correctly renders 1`] = `
   </article>
   <article
     className="cities__place-card place-card"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
   >
     <div
       className="place-card__mark
@@ -128,6 +133,7 @@ exports[`PlaceList correctly renders 1`] = `
     >
       <a
         href="#"
+        onClick={[Function]}
       >
         <img
           alt="Place image"

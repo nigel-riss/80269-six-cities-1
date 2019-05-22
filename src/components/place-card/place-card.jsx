@@ -10,6 +10,8 @@ const PlaceCard = (props) => {
   const {
     offer,
     onClick,
+    onHover,
+    onHoverEnd,
   } = props;
 
   const {
@@ -22,7 +24,7 @@ const PlaceCard = (props) => {
     isBookmarked,
   } = offer;
 
-  return <article className="cities__place-card place-card">
+  return <article className="cities__place-card place-card" onMouseEnter={onHover} onMouseLeave={onHoverEnd}>
     <div className={`place-card__mark
       ${isPremium ? `` : `visually-hidden`}
     `}>
@@ -73,6 +75,8 @@ PlaceCard.propTypes = {
     isBookmarked: PropTypes.bool.isRequired,
   }),
   onClick: PropTypes.func,
+  onHover: PropTypes.func,
+  onHoverEnd: PropTypes.func,
 };
 
 export default PlaceCard;

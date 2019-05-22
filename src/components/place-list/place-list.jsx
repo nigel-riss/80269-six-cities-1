@@ -6,6 +6,10 @@ import PlaceCard from '../place-card/place-card.jsx';
 class PlaceList extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      currentPlaceCardId: -1,
+    };
   }
 
   render() {
@@ -16,6 +20,18 @@ class PlaceList extends Component {
         return <PlaceCard
           key = {index.toString()}
           offer = {offer}
+          onClick = {(evt) => {
+            evt.preventDefault();
+            this.setState({currentPlaceCardId: index});
+          }}
+          onHover = {(evt) => {
+            evt.preventDefault();
+            this.setState({currentPlaceCardId: index});
+          }}
+          onHoverEnd = {(evt) => {
+            evt.preventDefault();
+            this.setState({currentPlaceCardId: -1});
+          }}
         />;
       })}
     </div>;
