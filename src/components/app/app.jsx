@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import PlaceCard from '../place-card/place-card.jsx';
 
 const App = (props) => {
-  const {places} = props;
+  const {offers} = props;
+  // const {places} = props;
 
   return <div>
     <div style={{display: `none`}}>
@@ -92,10 +93,10 @@ const App = (props) => {
               </ul>
             </form>
             <div className="cities__places-list places__list tabs__content">
-              {places.map((place, index) => {
+              {offers.map((offer, index) => {
                 return <PlaceCard
                   key = {index.toString()}
-                  title = {place}
+                  title = {offer.title}
                 />;
               })}
             </div>
@@ -110,7 +111,7 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  places: PropTypes.array.isRequired
+  offers: PropTypes.array.isRequired
 };
 
 export default App;
