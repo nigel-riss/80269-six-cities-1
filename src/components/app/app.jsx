@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PlaceCard from '../place-card/place-card.jsx';
+
+import PlaceList from '../place-list/place-list.jsx';
 
 const App = (props) => {
   const {offers} = props;
-  // const {places} = props;
 
   return <div>
     <div style={{display: `none`}}>
@@ -92,14 +92,11 @@ const App = (props) => {
                 <li className="places__option" tabIndex="0">Top rated first</li>
               </ul>
             </form>
-            <div className="cities__places-list places__list tabs__content">
-              {offers.map((offer, index) => {
-                return <PlaceCard
-                  key = {index.toString()}
-                  title = {offer.title}
-                />;
-              })}
-            </div>
+
+            <PlaceList
+              offers = {offers}
+            />
+
           </section>
           <div className="cities__right-section">
             <section className="cities__map map"></section>
@@ -111,7 +108,15 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  offers: PropTypes.array.isRequired
+  offers: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    imageSrc: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    rating: PropTypes.number.isRequired,
+    type: PropTypes.string.isRequired,
+    isPremium: PropTypes.bool.isRequired,
+    isBookmarked: PropTypes.bool.isRequired,
+  })),
 };
 
 export default App;

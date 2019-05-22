@@ -35,13 +35,13 @@ export default [
     isPremium: true,
     isBookmarked: false,
   },
-  {
-    title: `Wood and stone place`,
-    imageSrc: `img/room.jpg`,
-    price: 80,
-    rating: 80,
-    type: `room`,
-    isPremium: false,
-    isBookmarked: true,
-  },
+  // {
+  //   title: `Wood and stone place`,
+  //   imageSrc: `img/room.jpg`,
+  //   price: 80,
+  //   rating: 80,
+  //   type: `room`,
+  //   isPremium: false,
+  //   isBookmarked: true,
+  // },
 ];
