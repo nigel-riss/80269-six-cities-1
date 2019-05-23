@@ -5,11 +5,24 @@ import PlaceCard from './place-card.jsx';
 
 Enzyme.configure({adapter: new Adapter()});
 
+const mock = {
+  offer: {
+    title: `Beautiful &amp; luxurious apartment at great location`,
+    imageSrc: `img/apartment-01.jpg`,
+    price: 120,
+    rating: 90,
+    type: `apartment`,
+    isPremium: true,
+    isBookmarked: false,
+  }
+};
+
 it(`PlaceCard correctly handles click`, () => {
+  const {offer} = mock;
   const clickHandler = jest.fn();
 
   const placeCard = shallow(<PlaceCard
-    title = {`Beautiful &amp; luxurious apartment at great location`}
+    offer = {offer}
     onClick = {clickHandler}
   />);
 
