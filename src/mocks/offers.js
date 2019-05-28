@@ -7,6 +7,10 @@ export default [
     type: `apartment`,
     isPremium: true,
     isBookmarked: false,
+    coordinates: {
+      latitude: 52.3909553943508,
+      longitude: 4.85309666406198,
+    },
   },
   {
     title: `Wood and stone place`,
@@ -16,6 +20,10 @@ export default [
     type: `room`,
     isPremium: false,
     isBookmarked: true,
+    coordinates: {
+      latitude: 52.369553943508,
+      longitude: 4.85309666406198,
+    },
   },
   {
     title: `Canal View Prinsengracht`,
@@ -25,6 +33,10 @@ export default [
     type: `apartment`,
     isPremium: false,
     isBookmarked: false,
+    coordinates: {
+      latitude: 52.3909553943508,
+      longitude: 4.929309666406198,
+    },
   },
   {
     title: `Nice, cozy, warm big bed apartment`,
@@ -34,6 +46,10 @@ export default [
     type: `apartment`,
     isPremium: true,
     isBookmarked: false,
+    coordinates: {
+      latitude: 52.3809553943508,
+      longitude: 4.939309666406198,
+    },
   },
   // {
   //   title: `Wood and stone place`,
